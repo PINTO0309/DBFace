@@ -6,3 +6,4 @@ build/
 cmake-build-debug/
 README.ignore.md
 prj-ncnn_center/
+*.onnx

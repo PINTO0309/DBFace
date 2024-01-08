@@ -106,8 +106,8 @@ def camera_demo():
 
     dbface.load("model/dbfaceSmallH.pth")
     cap = cv2.VideoCapture(0)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1080)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
     ok, frame = cap.read()
 
     while ok:
@@ -122,14 +122,13 @@ def camera_demo():
             break
 
         ok, frame = cap.read()
-    
+
     cap.release()
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
     image_demo()
     camera_demo()
-    
 
 
-    
+
